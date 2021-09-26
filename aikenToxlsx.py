@@ -51,8 +51,13 @@ for line in file:
         quesnumber+=1
         arr = ['','','','','']
     else:
-        arr[index]=line
-        index+=1
+        if (index > 4):
+            print("Question number " +  str(quesnumber) + " have too much answer!")
+            print("Question content: "+arr[0])
+            sys.exit(1)
+        else:
+            arr[index]=line
+            index+=1
 
 print("Convert sucess!!!")
 workbook.close()
