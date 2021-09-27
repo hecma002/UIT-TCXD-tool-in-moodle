@@ -43,6 +43,9 @@ for line in file:
         line = line[8:9]
         temp = arr[1]
         trueansw = ord(line) - 64 #ord('A') = 65 then subtract 64 get 1
+        if trueansw not in range(1,5,1):
+            print("Question no have correct answer. Quescontent is: '"+arr[0] + "'")
+            sys.exit(1)
         arr[1] = arr[trueansw] 
         arr[trueansw] = temp
         insert(arr,row)
