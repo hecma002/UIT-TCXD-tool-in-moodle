@@ -1,0 +1,3 @@
+username,group1
+17520988,CBD-UIT1
+19520506,CBD-UIT1
